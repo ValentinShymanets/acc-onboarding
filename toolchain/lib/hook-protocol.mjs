@@ -25,7 +25,9 @@ function resolveCwd(input) {
   const direct = firstString(input.cwd);
   if (direct) return direct;
   if (Array.isArray(input.workspace_roots)) {
-    const root = input.workspace_roots.find((value) => typeof value === "string" && value);
+    const root = input.workspace_roots.find(
+      (value) => typeof value === "string" && value,
+    );
     if (root) return root;
   }
   return undefined;
@@ -66,7 +68,9 @@ export function parseHookPayload(raw, options) {
         : `${turnId ?? input.prompt_id ?? sessionId}:${options.event}`,
     toolName: typeof input.tool_name === "string" ? input.tool_name : undefined,
     toolInput: isRecord(input.tool_input) ? input.tool_input : {},
-    stopHookActive: input.stop_hook_active === true || (typeof input.loop_count === "number" && input.loop_count > 0),
+    stopHookActive:
+      input.stop_hook_active === true ||
+      (typeof input.loop_count === "number" && input.loop_count > 0),
   };
 }
 
