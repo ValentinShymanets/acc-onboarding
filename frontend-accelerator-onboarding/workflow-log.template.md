@@ -1,8 +1,8 @@
 # Workflow Log
 
-Task: `acc-onboarding`
+Task: `<task-id>`
 
-Developer: `Valentin Shymanets`
+Developer: `<name>`
 
 Active work started: `<timestamp>`
 
@@ -14,8 +14,8 @@ Active work started: `<timestamp>`
 
 ## Role Decisions
 
-| Time     | Role                   | Exact prompt used             | Result reviewed              | Developer decision              | Next action                          |
-| -------- | ---------------------- | ----------------------------- | ---------------------------- | ------------------------------- | ------------------------------------ |
+| Time | Role | Exact prompt used | Result reviewed | Developer decision | Next action |
+| --- | --- | --- | --- | --- | --- |
 | `<time>` | `requirements-analyst` | `<developer-authored prompt>` | `<artifact or short result>` | `<accept, clarify, or correct>` | `<manually selected role or action>` |
 
 Add one row for each role invocation or important correction. Preserve each prompt exactly, but do not copy full role responses into this file.
